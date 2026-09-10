@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module STUDENT_DATABASE_MANAGEMENT_SYSTEM {
+	requires java.sql; 
+}
