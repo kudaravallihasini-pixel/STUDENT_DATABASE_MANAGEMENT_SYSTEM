@@ -1,0 +1,27 @@
+package controller;
+
+import java.sql.SQLException;
+
+import dao.StudentDao;
+import stdbms.student.Student;
+
+public class StudentController {
+
+public static void main(String[]args) throws SQLException {
+	StudentDao dao = new StudentDao();
+	// insertion
+	 Student s1 = new Student(101,"Ravi","cse");
+	// dao.insert(s1);
+	 Student s2 = new Student(102,"Aravind","ece");
+	 //dao.insert(s2);
+	 //Display
+	 Student s3=new Student(103,"Baby","IT");
+	 //dao.insert(s3);
+	 Student s4= new Student(103,"hima","ds");
+	 //dao.updateStudent(s4);
+	// dao.displayStudent();
+	 //Delete
+	 dao.deleteStudent(102);
+	 dao.displayStudent();
+}
+}
